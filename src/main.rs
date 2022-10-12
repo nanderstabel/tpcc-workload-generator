@@ -60,35 +60,35 @@ fn main() -> Result<(), Error> {
     });
 
     (1..=10).for_each(|customer_id| {
-        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0, 4, 1));
+        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0));
         payment
             .execute(ch_benchmark.client.transaction().unwrap())
             .unwrap();
     });
 
     (1..=10).for_each(|customer_id| {
-        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0, 4, 1));
+        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0));
         payment
             .execute(ch_benchmark.client.transaction().unwrap())
             .unwrap();
     });
 
     (1..=10).for_each(|customer_id| {
-        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0, 4, 1));
+        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0));
         payment
             .execute(ch_benchmark.client.transaction().unwrap())
             .unwrap();
     });
 
     (1..=10).for_each(|customer_id| {
-        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0, 4, 1));
+        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0));
         payment
             .execute(ch_benchmark.client.transaction().unwrap())
             .unwrap();
     });
 
     (1..=10).for_each(|customer_id| {
-        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0, 4, 1));
+        let mut payment = Transaction::Payment(Payment::new(3, 1, customer_id, 42.0));
         payment
             .execute(ch_benchmark.client.transaction().unwrap())
             .unwrap();
