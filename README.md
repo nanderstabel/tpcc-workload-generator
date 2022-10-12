@@ -11,4 +11,4 @@ This command will to the following:
 1. Start a `redpanda`, `kafka connect` and `postgres` docker container. The `postgres` container will be initialized with data that can be found in `./debezium/tpcc-benchmark/init/`.
 2. Create a postgres to debezium connector.
 3. Run the transactional workload.
-4. For each TPC-C data table collect the transactional workload in workload files that can be consumed by a kafka producer.
+4. For each TPC-C data table collect the transactional workload in workload files that can be consumed into a kafka topic.
