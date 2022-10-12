@@ -11,7 +11,7 @@ do
 done
 
 docker-compose -f debezium/redpanda-debezium.compose.yml up -d && sleep 6
-sh debezium/ch-benchmark/connectors/create-postgres-debezium-connector.sh && sleep 2 # >/dev/null 2>&1
+sh debezium/tpcc-benchmark/connectors/create-postgres-debezium-connector.sh && sleep 2 # >/dev/null 2>&1
 cargo run
 
 wait
